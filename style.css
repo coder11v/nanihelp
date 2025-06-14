@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.add-task-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-task-form input[type="text"],
+.add-task-form textarea,
+.add-task-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.add-task-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.add-task-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-task-form button:hover {
+    background-color: #4cae4c;
+}
+
+.action-items-container h2 {
+    margin-top: 0;
+}
+
+.action-item {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.action-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.action-item p {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.action-item .meta {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.action-item .controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.action-item .controls select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.action-item .controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-item .controls .delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.action-item .controls .delete-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Status-specific styling */
+.action-item.status-to-do {
+    border-left: 5px solid #f0ad4e; /* Orange */
+}
+
+.action-item.status-in-progress {
+    border-left: 5px solid #5bc0de; /* Blue */
+}
+
+.action-item.status-done {
+    border-left: 5px solid #5cb85c; /* Green */
+    opacity: 0.7;
+}
+
+.action-item.status-done h3,
+.action-item.status-done p {
+    text-decoration: line-through;
+}

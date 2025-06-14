@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIB Services - Summer 2025 Action List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VIB Services - Summer 2025 Action List</h1>
+
+        <div class="add-task-form">
+            <h2>Add New Task</h2>
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <textarea id="task-description" placeholder="Task Description"></textarea>
+            <input type="text" id="task-assignee" placeholder="Assignee (e.g., Miss Jiya Rani Bajaj)">
+            <select id="task-status">
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Done">Done</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="action-items-container">
+            <h2>Action Items</h2>
+            <div id="action-items-list">
+                <!-- Tasks will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
